@@ -34,6 +34,8 @@ ENV RAILS_SERVE_STATIC_FILES=true
 # Leave RAILS_SERVE_STATIC_FILES commented if Nginx/Apache will serve static files instead of rails.
 ###
 
+RUN gem install bundler
+
 RUN bundle install
 
 RUN npm install
