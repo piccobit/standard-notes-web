@@ -34,8 +34,6 @@ COPY . /app/
 # Leave RAILS_SERVE_STATIC_FILES commented if Nginx/Apache will serve static files instead of rails.
 ###
 
-RUN git submodule update --init --force --remote
-
 RUN gem install bundler
 
 RUN bundle install
