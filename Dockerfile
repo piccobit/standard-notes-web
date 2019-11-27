@@ -43,7 +43,7 @@ RUN npm install
 RUN npm run build
 
 # Uncomment the line below for production:
-# RUN bundle exec rake assets:precompile
+RUN bundle exec rake assets:precompile
 
 EXPOSE 3000
 
